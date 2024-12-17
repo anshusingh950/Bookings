@@ -33,9 +33,9 @@ export default function Signup() {
 
 
     return (
-        <div className='sindiv'>
+        <div className='logdiv'>
         <Navbar/>
-        <div className='container py-5 signform ' style={{width:'50%',marginTop:'3rem',marginBottom:'2.99996rem'}}>
+        <div className='container py-5 signform ' style={{width:'50%',marginTop:'3rem',marginBottom:'2.99996rem',color:"white"}}>
             
                 <form onSubmit={handleSubmit}>
                     

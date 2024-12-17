@@ -5,10 +5,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background: linear-gradient(to right,rgba(8, 46, 183, 0.699),rgba(87, 35, 200, 0.837)); */
-  background-image: url(download.jpeg);
+  background: linear-gradient(to right,rgba(0,0,0),rgba(2, 4, 117, 0.9));
+  /* background-image: url(pic14.jpg);
   background-size:cover;
-  /* background-repeat: no-repeat; */
+  background-repeat: no-repeat; */
 }
 *{
     margin: 0px;

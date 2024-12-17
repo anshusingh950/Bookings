@@ -36,11 +36,17 @@
     transform: rotate(360deg);
   }
 }
-.sindiv{
+.sindiv{ 
     min-height: 600px;
-    background-image: url("pic3.jfif");
+    background-image: url("pic13.webp");
     background-repeat: no-repeat;
     background-size: cover;
+}
+.logdiv{ 
+  min-height: 600px;
+  background-image: url("pic12.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .signform{
     border: 1px solid rgb(189, 216, 147);

@@ -13,7 +13,7 @@ export default function Navbar() {
         <div>
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
                 <div className="container-fluid">
-                    <Link className="navbar-brand fs-2" to="/">GetFoody</Link>
+                    <Link className="navbar-brand fs-2 fw-bold"  to="/">GetRide</Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="/navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -24,7 +24,7 @@ export default function Navbar() {
                             </li>
                             {(localStorage.getItem("userEmail"))?
                                 <li className="nav-item">
-                                    <Link className="nav-link active Home1 btn bg-dark text-light" aria-current="page" to="/MyOrder">My Trips</Link>
+                                    <Link className="nav-link active Home1 btn bg-dark text-light" aria-current="page" to="/MyTrip">My Trips</Link>
                                 </li>
                             :""
                             }
@@ -36,10 +36,7 @@ export default function Navbar() {
                             </div>
                             :
                                 <div className='d-flex ' style={{alignItems:'center'}}>
-                                    <div className=" btn mx-2 fs-5 text-white" style={{textDecoration:'none',background:'#3F51B5',margin:'0px',padding:'0px'}} aria-current="page" >My Cart 
-                                
-                                    </div>
-                                   
+                                    
                                     <p className=" btn mx-2 fs-5 text-danger "  style={{textDecoration:'none',background:'#3F51B5',margin:'0px',padding:'0px'}}  aria-current="page" onClick={handleClickev} >LOG OUT</p>
 
                                 </div>
