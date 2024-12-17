@@ -8,7 +8,7 @@ export default function Signup() {
     const [credentials,setcredentials]=useState({email:"",password:""}) 
     const handleSubmit=async(e)=>{
         e.preventDefault();
-        const response=await fetch("http://localhost:5000/api/loginuser",{
+        const response=await fetch("https://bookings-2.onrender.com/api/loginuser",{
             method:'POST',
             headers:{
                 'Content-Type':'application/json'
