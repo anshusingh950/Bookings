@@ -28,7 +28,7 @@ const PayPalButton = () => {
     try {
       console.log(typeof price)
       console.log( price)
-      const response = await fetch('https://bookings-2.onrender.com/my-server/create-paypal-order', {
+      const response = await fetch('https://bookings-2.onrender.com/api/my-server/create-paypal-order', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
