@@ -28,7 +28,7 @@ const PayPalButton = () => {
     try {
       console.log(typeof price)
       console.log( price)
-      const response = await fetch('http://localhost:5000/my-server/create-paypal-order', {
+      const response = await fetch('https://bookings-2.onrender.com/my-server/create-paypal-order', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -41,7 +41,7 @@ const PayPalButton = () => {
       const data = await response.json();
       if (data.approval_url) {
         const currentDate = new Date().toISOString();
-        const response = await fetch('http://localhost:5000/api/createtrip', {
+        const response = await fetch('https://bookings-2.onrender.com/createtrip', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
