@@ -9,7 +9,7 @@ export default function MyTrip() {
   // Function to fetch trip data from API
   const loadData = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/gettrip", {
+      const response = await fetch("https://bookings-2.onrender.com/api/gettrip", {
         method: "POST", // Use POST request
         headers: {
           "Content-Type": "application/json",
