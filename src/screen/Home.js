@@ -49,7 +49,7 @@ export default function Home() {
   const [imageurl, setImageurl] = useState(["https://images.unsplash.com/photo-1456082902841-3335005c3082?crop=entropy&cs=srgb&fm=jpg&ixid=M3w2ODY5OTV8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzQzMzk4MDB8&ixlib=rb-4.0.3&q=85", "https://images.unsplash.com/photo-1516733968668-dbdce39c4651?crop=entropy&cs=srgb&fm=jpg&ixid=M3w2ODY5OTV8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzQzMzk4MDB8&ixlib=rb-4.0.3&q=85", "https://images.unsplash.com/photo-1474128710184-2a547ec84777?crop=entropy&cs=srgb&fm=jpg&ixid=M3w2ODY5OTV8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzQzMzk4MDB8&ixlib=rb-4.0.3&q=85"]);
 
   const loadData = async () => {
-    let dt = await fetch("http://localhost:5000/api/getlocation", {
+    let dt = await fetch("https://bookings-2.onrender.com/api/getlocation", {
       method: "GET",
       headers: {
         "Content-Type": 'application/json'
